@@ -1,0 +1,245 @@
+<html>
+  <!-- SuperWebKittens.com Website by Kuno Hoshiko -->
+  <!-- blah-blah-blah copyright 2019 -->
+  <!-- Website head -->
+  <head>
+  <!-- Meta tags -->
+  <title>Super Web Kittens — About</title>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <meta name='author' content='Kuno Hoshiko'/>
+  <meta name='description' content='A short description of a short game, dedicated to adventures of pets and their owners, including FAQ and Credits.'>
+  <meta property='og:type' content='website'/>
+  <meta property='og:title' content='Super Web Kittens — This game is NOT a cat dating simulator'/>
+  <meta property='og:description' content='A short story, dedicated to the adventures of pets and their owners, living in a cruel dystopian society.'/>
+  <meta property='og:image' content='http://superwebkittens.com/site/img/promo.png'/>
+  <meta property='og:image:secure_url' content='https://superwebkittens.com/site/img/promo.png'/>
+  <meta property='og:url' content='https://superwebkittens.com/'/>
+  <meta property='og:site_name' content='Super Web Kittens'/>
+  <!-- Load JQuery and CSS -->
+  <script src='/site/js/jquery.js'></script>
+  <link rel='stylesheet' type='text/css' href='/site/css/styles.css'>
+  <link rel='stylesheet' type='text/css' href='/site/css/background_about.css'>
+  <link rel='icon' href='/favicon.ico'>
+  </head>
+
+  <!-- Website body -->
+  <body>
+  <!-- Fade in animation -->
+  <script>document.body.className += ' fade-out';</script>
+  <script>
+    $(function(){
+      $('body').removeClass('fade-out');
+  });
+  </script>
+  <!-- Copyright click easter egg -->
+  <script>
+    function play(){
+      var audio = new Audio('/site/audio/meow.ogg');
+	  audio.play();
+    }
+  </script>
+  <!-- Go to Top button by w3schools -->
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+	    document.getElementById('gototop').classList.add('fadebutton');
+      } else {
+	    document.getElementById('gototop').classList.remove('fadebutton');
+      }
+    }
+	
+    function gototop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+    <center>
+	  <div id='content'>
+	    <!-- Copyright text -->
+	    <a class='text_copyright' onclick='play()'>Handcrafted by <b>KUNO HOSHIKO</b></a>
+        <div class='logotype_bar'>
+	      <img src='/site/img/logotype.png' style='height:150px; weight:150px;'></img>
+	    </div>
+		<!-- Navigation bar -->
+	    <ul class='menu'>
+	      <li class='menu_link'><a class='menu_link_text' href='/'>Home</a></li>
+      	  <li class='menu_link'><a class='menu_link_text_selected' href='/about'>About</a></li>
+		  <li class='menu_link'><a class='menu_link_text' href='/community'>Community</a></li>
+		  <li class='menu_link'><a class='menu_link_text' href='/contact'>Contact</a></li>
+	    </ul>
+	    <br>
+		<!-- About page navigation bar -->
+		<ul class='menu_2'>
+		  <li class='menu_2_link'><a class='menu_2_link_text' href='#act1'>Act I</a></li>
+		  <li class='menu_2_link'><a class='menu_2_link_text' href='#features'>Features</a></li>
+		  <li class='menu_2_link'><a class='menu_2_link_text' href='#faq'>FAQ</a></li>
+          <li class='menu_2_link'><a class='menu_2_link_text' href='#credits'>Credits</a></li>
+		</ul>
+		<!-- About page content -->
+		<!-- Act I description -->
+		<!-- I know that it is terrible. -->
+		<div id="act1">
+          <a class='text_main'><b>Act I</b></a>
+		  <br><br>
+		  <p class='text_description'>A short part of the long story, dedicated to the adventures of pets and their owners, living in a cruel dystopian society, where the humans
+		  have become extinct and now serve as <b>PATRONS</b>, the highest caste of the new world, inhabited with intelligent animals.
+		  </p>
+		  <img src='/site/img/screenshot2.jpg' class='screenshot'></img>
+		  <p class='text_description'>After ruthless wars and conflicts between the new Earth dwellers, <b>Cats</b> have taken the place of the second caste and named themselves as <b>PETS</b>.
+		  </p>
+		  <img src='/site/img/screenshot1.jpg' class='screenshot'></img>
+		  <br><p class='text_description'>Everyone in between are, however, had been fated to become their powerless slaves, belonging to the lowest caste – <b>UNDERLINGS</b>.
+		  </p><br>
+		  <br><p class='text_description'>But, despite everything, the hope remains even in a such dark place. Everything changes when a young Patron arrives to the <b>Capital High School</b>, unique place, where everyone has a chance to study for the benefit of our world future, no matter of their caste or social status...
+		  </p>
+		  <img src='/site/img/screenshot3.jpg' class='screenshot'></img>
+		  <p class='text_description'>Sounds like a good base for a game plot, <i>huh?</i> <a class='irony'> (no)</a></p><br>
+		  <p class='text_description'>Now <b>forget</b> about it, because everything mentioned here will never be brought up again.</p>
+		  <br><br><p class='text_description'>Instead of facing all these stupid society problems you are going to hang out
+		  with fluffy anime cats and sometimes even dogs! <a class='rainbow_text animated'>DEEP</a> and <a class='rainbow_text animated'>HIDDEN</a> meaning behind the storyline is not included.</p>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<!-- Features list -->
+		<div id="features">
+          <a class='text_main'><b>Features</b></a>
+		  <!-- Facial expressions -->
+		  <p class='text_description'><h1>Meet the gang</h1></p>
+		  <video height="240" loop='loop' class='video' autoplay>
+           <source src="/site/img/tiger.webm" type="video/mp4">
+          </video>
+		  <p class='text_description'>
+		    A fluffy trio of strange friends, studying in one class with you.
+			All of them have their own style of speech and distinctive character traits.
+			And they also seems to have... anime eyes?!
+		  </p>
+		  <br><br>
+		  <!-- Facial expressions -->
+		  <p class='text_description'><h1>Yes, that's all in their eyes!</h1></p>
+		  <video height="240" loop='loop' class='video' autoplay>
+           <source src="/site/img/facial_expressions.webm" type="video/mp4">
+          </video>
+		  <p class='text_description'>
+		    All characters' dialogue lines are accompanied with different <a class='irony'>(and sometimes not very)</a> animated facial expressions, which expand the value of their responses and fill them with unique charisma!
+		  </p>
+		  <br><br>
+		  <!-- Artstyle -->
+		  <p class='text_description'><h1>Aesthetics of the Internet</h1></p>
+            <video height="240" loop='loop' class='video' autoplay>
+            <source src="/site/img/public_domain.webm" type="video/mp4">
+          </video>
+		  <p class='text_description'>
+		    All game content (including music, sound effects and graphics) is based on the stock Creative Commons and Public Domain resources found on the Internet and thoroughly edited in Paint.NET. Some parts of the game content were even processed or generated with use of neural networks! <a class='irony'>(yes, i'm that poor)</a>
+		  </p>
+		  <br><BR>
+		  <!-- Open source -->
+          <img src='/site/img/unknown.png' height="240" class='promoicon'></img>
+		  <p class='text_description'>
+		   Terrifying monstrosity. Literally a living nightmare. Game source code. Github. Soon.
+		  </p>
+		  <br>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<!-- FAQ -->
+		<!-- Is anyone actually interested in this game btw? -->
+		<div id="faq">
+          <a class='text_main'><b>FAQ</b></a>
+		  <!-- Question & Answer -->
+		  <p class='text_description'><h1>I am a youtuber and I want to get some keys!</h1></p>
+		  <p class='text_description'>
+		    You can find my contact information on the <a href='https://www.superwebkittens.com/contact.html' class='text_description_link '>contact</a> page. <a class='irony'>(unexpected, huh?)</a>
+			<br>Send me an email with a link to your channel and a short summary.
+			<br>I will send keys after the release date as a reply to the most interesting requests.
+			<br><a class='irony'>(Only if will get any requests, of course...)</a>
+		  </p>
+		  <br>
+		  <br>
+		  <!-- Question & Answer -->
+		  <p class='text_description'><h1>So, this is only the first act? Are there going to be more parts? Will they be paid or free?</h1></p>
+		  <p class='text_description'>
+		    This game is only the first part of the full story.
+			<br>
+			<br>Act I is fully <a class='irony'>(un)</a>playable on its own and ends quite interesting.
+			<br>You can decide if you want to wait for the next part or consider Act I as a short independent story.
+			<br>
+			<br>Development of the next part is planned, however, all details are shrouded in mystery. But, hey! I have no friends and currently I am on my summer holidays!
+			Enough free time, I mean. No promises though.
+		  </p>
+		  <br>
+		  <br>
+		  <!-- Question & Answer -->
+		  <p class='text_description'><h1>How long <a class='irony'>(short)</a> is this game?</h1></p>
+		  <p class='text_description'>
+            It really depends on your reading speed.
+			The game is intended to be a short slow-paced 1 hour experiment.
+			Too short? Well, luckily you will get bored much earlier!
+		  </p>
+		  <br>
+		  <br>
+		  <!-- Question & Answer -->
+		  <p class='text_description'><h1>I found a bug/the game doesn't work!</h1></p>
+		  <p class='text_description'>
+            Make sure that your system meets the requirements. (DirectX and OpenGL support)
+				
+			If the black/white screen appears try installing <a class='text_description_link' href='https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads'>Visual C++ Redistributables</a>.
+			<br>
+			<br>If you found a bug or other problem with the game, please, send a message to the following email:
+			<img src='/site/img/email2.png' class='image' style='max-width: 370px;'></img>
+		  </p>
+		  <br>
+		  <!-- Question & Answer -->
+		  <p class='text_description'><h1>My photo/music/art is used in the game and I want to remove it</h1></p>
+		  <p class='text_description'>
+		    If you have published your work under one of the Creatie Commons or Public Domain licenses, but now you
+			regret it, please, send an email message to the <img src='/site/img/email.png' class='image' style='max-width: 370px;'></img>
+			<br>This also applies to the case when photostock has incorrectly marked your work or I have not given a proper attribution.
+		  </p>
+		  <br>
+		  <br>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<!-- Credits -->
+		<div id="credits">
+          <a class='text_main'><b>Credits</b></a>
+		  <p class='text_description'><h1>General credits</h1></p>
+		  <p class='text_description'>
+            Game credits will be released alongside with the Act I.
+		  </p>
+		  <br>
+		  <p class='text_description'><h1>Trailer credits</h1></p>
+		  <p class='text_description'>
+            Sound effects and music obtained from <a class='text_description_link' href='https://www.zapsplat.com'>Zapsplat</a>
+		    <br><a class='text_description_link' href='https://freesound.org/people/Sirkoto51/sounds/419802/'>Anime encounter loop #3</a> by <a class='text_description_link' href='https://freesound.org/people/Sirkoto51/'>Sirkoto51</a>
+		  </p>
+		  <p class='text_description'><h1>Website credits</h1></p>
+		  <p class='text_description'>
+            <a class='text_description_link' href='https://codepen.io/AustenHolland/pen/QzyGqW'>Animated rainbow text</a>
+			<br><a class='text_description_link' href='https://codepen.io/arturoalviar/pen/GZxrmp'>Glowing buttons</a>
+			<br><a class='text_description_link' href='https://www.w3schools.com/howto/howto_js_scroll_to_top.asp'>Go to top button</a>
+			<br><a class='text_description_link' href='https://buttons.github.io/'>GitHub button</a>
+		  </p>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<p class='text_description'>
+		Well, that's all I can tell you now.
+		<br>Maybe the <a class='text_description_link' href='https://play.superwebkittens.com/'>demo</a> can do my job better?
+		<br>
+		<br><a class='text_description_link' onclick='gototop()'>Back to Top</a>
+		</p>
+		<!-- Go to top button -->
+		<a id='gototop' class='gototop' onclick='gototop()'>↑</a>
+		</center>
+	  </div>
+    </center>
+  </body>
+</html>

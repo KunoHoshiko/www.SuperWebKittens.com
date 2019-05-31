@@ -1,0 +1,315 @@
+/* Load font */
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+/* Main CSS code */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 960px;
+  margin: auto;
+  filter: saturate(0%);
+  transition: all 1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+html:hover {
+  filter: saturate(100%);
+}
+
+body {
+  opacity: 1;
+  transition: 2s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
+.promoicon {
+  display: block;
+  margin-top: 25pt;
+  margin-bottom: 25pt;
+  width: 100%;
+  max-width: 200pt;
+  transition: all 0.75s ease-in-out;
+  transition-delay: 0.5s;
+  filter: drop-shadow(0 0 7px rgba(100,0,0,0.1));
+}
+
+.promoicon:hover {
+  transform: rotate(360deg);
+}
+
+.screenshot {
+  display: block;
+  margin-top: 25pt;
+  margin-bottom: 25pt;
+  width: 100%;
+  transition: all 0.75s ease-in-out;
+  transition-delay: 0.5s;
+  filter: drop-shadow(0 0 7px rgba(100,0,0,0.1));
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.screenshot:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(100,0,0,0.25));
+}
+
+.video {
+  display: block;
+  transition: all 0.75s ease-in-out;
+  transition-delay: 0.25s;
+  filter: drop-shadow(0 0 7px rgba(100,0,0,0.1));
+  margin-bottom: 15pt;
+}
+
+.video:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(100,0,0,0.25));
+}
+
+/* Logotype bar */
+.logotype_bar {
+  width: 100%;
+  display: block;
+  margin-top: 26pt;
+  filter: drop-shadow(0 0 7px rgba(100,0,0,0.1));
+  box-shadow: 0 0 0 1px transparent;
+  transition: all 1s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+.logotype_bar:hover {
+  transform: scale(1.025);
+  filter: drop-shadow(0 0 15px rgba(100,0,0,0.2));
+  cursor: pointer;
+}
+
+/* Text */
+.text_main {
+  font-size: 2.25rem;
+  filter: drop-shadow(0 0 0.2px rgba(105, 105, 105, 1));
+  -webkit-text-stroke: 0.45px;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  text-shadow: #fff 0px -0.1px 0.2px;
+  color: black;
+}
+
+.text_tip {
+  font-size: 1rem;
+  line-height: 16pt;
+  filter: drop-shadow(0 0 0.2px rgba(105, 105, 105, 1));
+  -webkit-text-stroke: 0.45px;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  text-shadow: #fff 0px -0.1px 0.2px;
+  color: black;
+}
+
+.text_description {
+  display: inline;
+  line-height: 25pt;
+  font-size: 1.5rem;
+  filter: drop-shadow(0 0 0.15px rgba(105, 105, 105, 0.5));
+  -webkit-text-stroke: 0.2px;
+  -webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.1);
+  text-shadow: #fff 0px -0.1px 0.2px;
+  color: black;
+}
+
+.text_description_link {
+  text-decoration: none;
+  color: #ff14f1;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.text_description_link:hover {
+  font-size: 1.6rem;
+  filter: grayscale(100%);
+}
+
+.text_copyright {
+  display: inline-block;
+  font-size: 1rem;
+  filter: drop-shadow(0 0 0.2px rgba(105, 105, 105, 1));
+  -webkit-text-stroke: 0.45px;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  text-shadow: #fff 0px -0.1px 0.2px;
+  color: black;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  transition-delay: 1s;
+  margin-top: 1.5pt;
+}
+
+.text_copyright:hover {
+  font-size: 1.2rem;
+}
+
+.irony {
+  filter: opacity(20%);
+  transition: all 1s ease-in-out;
+}
+
+.irony:hover{
+  filter: opacity(1%);
+}
+
+/* Rainbow text by Austen Holland*/
+/* Source: https://codepen.io/AustenHolland/pen/QzyGqW */
+.rainbow_text {
+  filter: none;
+  -webkit-text-stroke: none;
+  text-shadow: none;
+  background: black;
+  background: linear-gradient(to right, red, orange , yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.rainbow_text.animated {
+  animation: rainbow_animation 5s ease-in-out infinite;
+  background-size: 400%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0
+    }
+
+    50% {
+        background-position: 100%
+    }
+}
+
+/* Navigation bar */
+/* Main menu */
+.menu {
+  list-style-type: none;
+}
+
+.menu_link {
+  margin-right: 25pt;
+  display: inline;
+}
+
+.menu_link_text {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2.25rem;
+  transition: all 0.75s ease-in-out;
+  transition-delay: 0.1s;
+  color: black;
+}
+
+.menu_link_text:hover {
+  overflow: hidden;
+  font-size: 2rem;
+  color: #ff14f1;
+}
+
+.menu_link_text_selected {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #ff14f1;
+}
+
+/* About page menu */
+.menu_2 {
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 30pt;
+}
+
+.menu_2_link {
+  margin-right: 20pt;
+  display: inline;
+}
+
+.menu_2_link_text {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transition: all 0.75s ease-in-out;
+  transition-delay: 0.1s;
+  color: black;
+}
+
+.menu_2_link_text:hover{
+  overflow: hidden;
+  font-size: 1.85rem;
+  color: #ff14f1;
+}
+
+/* Buttons */
+/* Glowing button by Arturo */
+/* https://codepen.io/arturoalviar/pen/GZxrmp */
+.button {
+  font: 100%/1.5;
+  border-radius: 3em;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em 5em;
+  margin: auto;
+}
+
+.glow-button {
+  margin-top: 23pt;
+  margin-bottom: 25pt;
+  background: rgb(255, 3, 235);
+  background: linear-gradient(180deg, rgba(255, 3, 235, 1) 0%, rgba(178, 12, 191, 1) 100%);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(82, 3, 88, 0.25);
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.15s;
+}
+.glow-button:hover,
+.glow-button:focus {
+  box-shadow: 0 12px 30px rgba(82, 3, 88, 0.45);
+  transform: scale(1.05);
+}
+
+/* Go to top button by w3schools.com */
+/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 3em;
+  font-size: 2rem;
+  opacity: 0;
+  background: rgb(255, 3, 235);
+  background: linear-gradient(180deg, rgba(255, 3, 235, 1) 0%, rgba(178, 12, 191, 1) 100%);
+  box-shadow: 0 10px 20px rgba(82, 3, 88, 0.25);
+  transition: all 1s ease-in-out;
+}
+
+.gototop:hover {
+  opacity: 0.65;
+  box-shadow: 0 12px 30px rgba(82, 3, 88, 0.45);
+  transform: scale(1.05);
+}
+
+.fadebutton {
+  opacity: 0.5;
+}

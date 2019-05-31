@@ -1,0 +1,89 @@
+<html>
+  <!-- SuperWebKittens.com Website by Kuno Hoshiko -->
+  <!-- blah-blah-blah copyright 2019 -->
+  <!-- Website head -->
+  <head>
+  <!-- Meta tags -->
+  <title>Super Web Kittens — Community</title>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <meta name='author' content='Kuno Hoshiko'/>
+  <meta name='description' content='Official Super Web Kittens Community resources and social networks media.'>
+  <meta property='og:type' content='website'/>
+  <meta property='og:title' content='Super Web Kittens — This game is NOT a cat dating simulator'/>
+  <meta property='og:description' content='A short story, dedicated to the adventures of pets and their owners, living in a cruel dystopian society.'/>
+  <meta property='og:image' content='http://superwebkittens.com/site/img/promo.png'/>
+  <meta property='og:image:secure_url' content='https://superwebkittens.com/site/img/promo.png'/>
+  <meta property='og:url' content='https://superwebkittens.com/'/>
+  <meta property='og:site_name' content='Super Web Kittens'/>
+  <!-- Load JQuery and CSS -->
+  <script src='/site/js/jquery.js'></script>
+  <link rel='stylesheet' type='text/css' href='/site/css/styles.css'>
+  <link rel='stylesheet' type='text/css' href='/site/css/background.css'>
+  <link rel='icon' href='/favicon.ico'>
+  <!-- Github button from https://buttons.github.io/ -->
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Website body -->
+  <body>
+  <!-- Fade in animation -->
+  <script>document.body.className += ' fade-out';</script>
+  <script>
+    $(function(){
+      $('body').removeClass('fade-out');
+    });
+  </script>
+  <!-- Copyright click easter egg -->
+  <script>
+    function play(){
+      var audio = new Audio('/site/audio/meow.ogg');
+	  audio.play();
+    }
+  </script>
+    <center>
+	  <div id='content'>
+	    <!-- Copyright text -->
+	    <a class='text_copyright' onclick='play()'>Handcrafted by <b>KUNO HOSHIKO</b></a>
+        <div class='logotype_bar'>
+	      <img src='/site/img/logotype.png' style='height:150px;'></img>
+	    </div>
+		<!-- Navigation bar -->
+	    <ul class='menu'>
+	      <li class='menu_link'><a class='menu_link_text' href='/'>Home</a></li>
+      	  <li class='menu_link'><a class='menu_link_text' href='/about'>About</a></li>
+		  <li class='menu_link'><a class='menu_link_text_selected' href='/community'>Community</a></li>
+		  <li class='menu_link'><a class='menu_link_text' href='/contact'>Contact</a></li>
+	    </ul>
+	    <br>
+		<!-- Community page content -->
+		<a class='text_main'>Social Networks</a>
+		<br><br>
+		<a class='text_description'><b>Read</b> annoying marketing tweets in the official Twitter</a>
+		<br><br>
+		<!-- Twitter button -->
+		<a href="https://twitter.com/SuperWebKittens?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SuperWebKittens</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<br><br>
+		<a class='text_description'><b>Watch</b> unregistered Bandicam videos on the official Youtube channel</a>
+		<br><br>
+		<!-- Youtube button -->
+		<script src="https://apis.google.com/js/platform.js"></script>
+        <div class="g-ytsubscribe" data-channelid="UCUWmdRDA8q7Um904WB2u3PA" data-layout="full" data-count="hidden"></div>
+	  	<br><br>
+		<a class='text_description'><b>Observe</b> my failed attempts to figure out how does the GitHub work</a>
+		<br><br>
+		<!-- Github button -->
+		<!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/kun0h" data-size="large" aria-label="Follow @kun0h on GitHub">Follow @kun0h</a>
+	  	<br><br>
+		<a class='text_main'>More?</a>
+		<br><br>
+		<!-- Tubmlr button -->
+		<a class='text_description'>My blog</a>
+		<br><br>
+        <iframe class="btn" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="20" width="65" src="https://platform.tumblr.com/v2/follow_button.html?type=follow&amp;tumblelog=knnoh0&amp;color=blue"></iframe>
+	  </div>
+    </center>
+  </body>
+</html>

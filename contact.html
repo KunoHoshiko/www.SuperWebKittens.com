@@ -1,0 +1,76 @@
+<html>
+  <!-- SuperWebKittens.com Website by Kuno Hoshiko -->
+  <!-- blah-blah-blah copyright 2019 -->
+  <!-- Website head -->
+  <head>
+  <!-- Meta tags -->
+  <title>Super Web Kittens — Contact</title>
+  <meta charset='utf-8'/>
+  <meta name="robots" content="noindex">
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <meta name='author' content='Kuno Hoshiko'/>
+  <meta name='description' content='Official Super Web Kittens contact information.'>
+  <meta property='og:type' content='website'/>
+  <meta property='og:title' content='Super Web Kittens — This game is NOT a cat dating simulator'/>
+  <meta property='og:description' content='A short story, dedicated to the adventures of pets and their owners, living in a cruel dystopian society.'/>
+  <meta property='og:image' content='http://superwebkittens.com/site/img/promo.png'/>
+  <meta property='og:image:secure_url' content='https://superwebkittens.com/site/img/promo.png'/>
+  <meta property='og:url' content='https://superwebkittens.com/'/>
+  <meta property='og:site_name' content='Super Web Kittens'/>
+  <!-- Load JQuery and CSS -->
+  <script src='/site/js/jquery.js'></script>
+  <link rel='stylesheet' type='text/css' href='/site/css/styles.css'>
+  <link rel='stylesheet' type='text/css' href='/site/css/background.css'>
+  <link rel='icon' href='/favicon.ico'>
+  </head>
+
+  <!-- Website body -->
+  <body>
+  <!-- Fade in animation -->
+  <script>document.body.className += ' fade-out';</script>
+  <script>
+    $(function(){
+      $('body').removeClass('fade-out');
+    });
+  </script>
+  <!-- Copyright click easter egg -->
+  <script>
+    function play(){
+      var audio = new Audio('/site/audio/meow.ogg');
+	  audio.play();
+    }
+  </script>
+    <center>
+	  <div id='content'>
+	    <!-- Copyright text -->
+	    <a class='text_copyright' onclick='play()'>Handcrafted by <b>KUNO HOSHIKO</b></a>
+        <div class='logotype_bar'>
+	      <img src='/site/img/logotype.png' style='height:150px;'></img>
+	    </div>
+		<!-- Navigation bar -->
+	    <ul class='menu'>
+	      <li class='menu_link'><a class='menu_link_text' href='/'>Home</a></li>
+      	  <li class='menu_link'><a class='menu_link_text' href='/about'>About</a></li>
+		  <li class='menu_link'><a class='menu_link_text' href='/community'>Community</a></li>
+		  <li class='menu_link'><a class='menu_link_text_selected' href='/contact'>Contact</a></li>
+	    </ul>
+	    <br>
+		<!-- Contact page content -->
+		<a class='text_main'>Press & Youtubers</a>
+		<br>
+		<img src='/site/img/email3.png' class='image' style='max-width: 370px;'></img>
+		<br><br>
+		<a class='text_main'>Support</a>
+		<br>
+		<img src='/site/img/email2.png' class='image' style='max-width: 370px;'></img>
+		<br><br>
+		<a class='text_main'>Copyright</a>
+		<br><a class='text_description'>If you have published your work under one of the Creative Commons or Public Domain licenses, but now you regret it, please, send an email message to the</a>
+		<br>
+		<img src='/site/img/email.png' class='image' style='max-width: 370px;'></img>
+		<br><a class='text_description'>This also applies to the case when photostock has incorrectly marked your work or I have not given a proper attribution.</a>
+		
+	  </div>
+    </center>
+  </body>
+</html>

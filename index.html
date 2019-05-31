@@ -1,0 +1,74 @@
+<html>
+  <!-- SuperWebKittens.com Website by Kuno Hoshiko -->
+  <!-- blah-blah-blah copyright 2019 -->
+  <!-- Website head -->
+  <head>
+  <!-- Meta tags -->
+  <title>Super Web Kittens — This game is NOT a cat dating simulator</title>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <meta name='author' content='Kuno Hoshiko'/>
+  <meta name='description' content='A short story, dedicated to the adventures of pets and their owners, living in a cruel dystopian society.'>
+  <meta property='og:type' content='website'/>
+  <meta property='og:title' content='Super Web Kittens — This game is NOT a cat dating simulator'/>
+  <meta property='og:description' content='A short story, dedicated to the adventures of pets and their owners, living in a cruel dystopian society.'/>
+  <meta property='og:image' content='http://superwebkittens.com/site/img/promo.png'/>
+  <meta property='og:image:secure_url' content='https://superwebkittens.com/site/img/promo.png'/>
+  <meta property='og:url' content='https://superwebkittens.com/'/>
+  <meta property='og:site_name' content='Super Web Kittens'/>
+  <!-- Load JQuery and CSS -->
+  <script src='/site/js/jquery.js'></script>
+  <link rel='stylesheet' type='text/css' href='/site/css/styles.css'>
+  <link rel='stylesheet' type='text/css' href='/site/css/background.css'>
+  <link rel='icon' href='/favicon.ico'>
+  </head>
+
+  <!-- Website body -->
+  <body>
+  <!-- Fade in animation -->
+  <script>document.body.className += ' fade-out';</script>
+  <script>
+    $(function(){
+      $('body').removeClass('fade-out');
+    });
+  </script>
+  <!-- Copyright click easter egg -->
+  <script>
+    function play(){
+      var audio = new Audio('/site/audio/meow.ogg');
+	  audio.play();
+    }
+  </script>
+    <center>
+	  <div id='content'>
+	    <!-- Copyright text -->
+	    <a class='text_copyright' onclick='play()'>Handcrafted by <b>KUNO HOSHIKO</b></a>
+        <div class='logotype_bar'>
+	      <img src='/site/img/logotype.png' style='height:150px;'></img>
+	    </div>
+		<!-- Navigation bar -->
+	    <ul class='menu'>
+	      <li class='menu_link'><a class='menu_link_text' href='/' title='You are already here, darling!'>Home</a></li>
+      	  <li class='menu_link'><a class='menu_link_text' href='/about'>About</a></li>
+		  <li class='menu_link'><a class='menu_link_text' href='/community'>Community</a></li>
+		  <li class='menu_link'><a class='menu_link_text' href='/contact'>Contact</a></li>
+	    </ul>
+	    <br>
+		<!-- Steam Store Widget -->
+	    <iframe src="https://store.steampowered.com/widget/1058840/" frameborder="0" width="646" height="190"></iframe>
+	    <br><br>
+		<!-- Play online section -->
+        <a class='text_main'>Or maybe you would prefer to...</a>
+	    <br>
+	    <a class='button glow-button' href='' style='filter: grayscale(100%);'>Play online</a>
+	    <br>
+	    <a class='text_tip'>Sorry, not available yet!
+	      <br>
+		  <b>HTML5</b> and <b>Javacript</b> compatible browser required.
+		  <br>
+		  <i>Currently only demo can be (cannot be) played in a web browser!</i>
+	    </a>
+	  </div>
+    </center>
+  </body>
+</html>
